@@ -20,14 +20,6 @@ An AI-powered Telegram bot for automated candidate screening and job matching us
 - **Framework**: `python-telegram-bot` v20+
 - **Data**: Pandas/CSV
 
-### 🚀 Quick Start
-```bash
-git clone https://github.com/yourusername/hr-assistant-bot.git
-cd hr-assistant-bot
-pip install -r requirements.txt
-echo "TELEGRAM_TOKEN=your_bot_token" > .env
-python bot.py
-
 ### Contacts
 Разработчик | Developer: [Киселева Вероника | Kiseleva Veronica]
 Email: kinilokis@gmail.com
@@ -36,3 +28,11 @@ GitHub: github.com/nikilichka
 
 ### 📜 License
 MIT License
+
+### 🚀 Quick Start
+```bash
+git clone https://github.com/yourusername/hr-assistant-bot.git
+cd hr-assistant-bot
+pip install -r requirements.txt
+echo "TELEGRAM_TOKEN=your_bot_token" > .env
+python bot.py
