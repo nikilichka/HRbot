@@ -21,10 +21,10 @@ An AI-powered Telegram bot for automated candidate screening and job matching us
 - **Data**: Pandas/CSV
 
 ### Contacts
-Разработчик | Developer: [Киселева Вероника | Kiseleva Veronica]
-Email: kinilokis@gmail.com
-Telegram: @nikilichka
-GitHub: github.com/nikilichka
+- **Разработчик | Developer:** Киселева Вероника | Kiseleva Veronica
+- **Email:** kinilokis@gmail.com
+- **Telegram:** @nikilichka
+- **GitHub:** github.com/nikilichka
 
 ### 📜 License
 MIT License
