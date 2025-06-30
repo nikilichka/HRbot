@@ -1,0 +1,7 @@
+python-telegram-bot
+transformers
+torch
+sentence-transformers
+pandas
+numpy
+python-dotenv
