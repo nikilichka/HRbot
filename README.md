@@ -9,7 +9,7 @@
 An AI-powered Telegram bot for automated candidate screening and job matching using Natural Language Processing (NLP) and semantic search technologies.
 
 ### ✨ Key Features
-- **Smart CV analysis** with 50%+ relevance threshold
+- **Smart CV analysis** with 40%+ relevance threshold
 - **Multi-stage filtering** (age, citizenship)
 - **Automated contact collection**
 - **CSV database integration**

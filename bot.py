@@ -29,7 +29,7 @@ load_dotenv()
 model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
 
 # Минимальный порог совместимости (50%)
-MIN_SIMILARITY = 0.50
+MIN_SIMILARITY = 0.40
 
 # Загрузка данных о вакансиях
 try:
@@ -138,7 +138,7 @@ async def handle_country(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
     )
 
 def match_vacancies(text: str, country: str) -> pd.DataFrame:
-    """Поиск вакансий с учетом минимальной совместимости 50%"""
+    """Поиск вакансий с учетом минимальной совместимости 40%"""
     if vacancies.empty or text.strip() == "":
         return pd.DataFrame()
     
@@ -180,7 +180,7 @@ async def handle_experience(update: Update, context: ContextTypes.DEFAULT_TYPE) 
         
         if matched.empty:
             await update.message.reply_text(
-                "К сожалению, не найдено вакансий с достаточным уровнем совместимости (минимум 50%).\n"
+                "К сожалению, не найдено вакансий с достаточным уровнем совместимости (минимум 40%).\n"
                 "Совет: укажите больше технических деталей о вашем опыте и навыках."
             )
             return
@@ -188,7 +188,7 @@ async def handle_experience(update: Update, context: ContextTypes.DEFAULT_TYPE) 
         context.user_data['last_matches'] = matched.to_dict('records')
         context.user_data['selected_vacancy'] = matched.iloc[0]['Вакансия']
         
-        response = "🏆 Найденные вакансии (совместимость от 50%):\n\n"
+        response = "🏆 Найденные вакансии (совместимость от 40%):\n\n"
         for i, vacancy in enumerate(context.user_data['last_matches'], 1):
             response += (
                 f"{i}. <b>{vacancy['Вакансия']}</b>\n"
